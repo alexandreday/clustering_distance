@@ -11,6 +11,7 @@ import copy
 np.set_printoptions(suppress = True)
 
 def plot_data(X, y, out_file = None, title = None ,show = True):
+    """ Simple function to plot your 2D results ! """
 
     yunique = np.unique(y)
 
@@ -109,8 +110,7 @@ class JACCARD:
         return self
 
 def main():
-
-    ###### example ########
+    """ Some trivial example , try and play with the DBSCAN parameters to see how the measure changes """
 
     np.random.seed(12)
     X, y_true = make_blobs(n_samples = 5000, n_features=2, centers = 10)
